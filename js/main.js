@@ -25,3 +25,4 @@ $('.slider3').slick({
   　　arrows: true,
   　　slidesToShow:3,
   　});
+
