@@ -11,7 +11,7 @@ body{
   color: #000;
   margin: 0;
   padding: 0;
-  background-color: #ddd;
+  background-color: #bfbfbf;
 }
 a{
   text-decoration: none;
@@ -226,6 +226,7 @@ img{
   line-height: 2.0;
   width: 600px;
   margin-left: 50px;
+  font-weight: bold;
 }
 .skill{
   font-size: 2rem;
@@ -245,6 +246,7 @@ img{
   margin: 0 auto;
   margin-top: 1%;
   margin-bottom: 10%;
+  font-weight: bold;
 }
 .test{
   width: 350px;
@@ -350,30 +352,13 @@ margin-bottom: 100px;
   margin: calc(50vh - 150px) auto;
   border-radius: 5px;
   box-shadow: 0 1px 20px #999;
-  background: #ddd;
+  background: #bfbfbf;
   position: relative;
   overflow: hidden;
   margin: 50px auto;
   margin-top: 100px;
-  margin-bottom: 20px;
   padding: auto;
 }
-.yousai3{
-  width: 700px;
-  height: 340px;
-  margin: calc(50vh - 150px) auto;
-  border-radius: 5px;
-  box-shadow: 0 1px 20px #999;
-  background: #ddd;
-  position: relative;
-  overflow: hidden;
-  margin: 50px auto;
-  margin-bottom: 60px;
-  margin-top: 150px;
-  padding: auto;
-}
-
-
 .FA{
   font-size: 3rem;
   font-family: 'philosopher', serif;
@@ -383,27 +368,18 @@ margin-bottom: 100px;
   margin: 0 auto;
   margin-top: 100px;
 }
-.yousai {
-  display: grid;
-  gap : 60px;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
 .huku{
   font-size: 35px;
   font-family: 'philosopher', serif;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: bold;
   text-align: center;
   margin-top: 20px;
 }
 .FAbun{
   text-align: left;
   font-size: 18px;
+  font-weight: bold;
   margin: 0 auto;
   padding: auto;
   line-height: 2;
@@ -412,40 +388,45 @@ margin-bottom: 100px;
 }
 .hukubun {
   width: 600px;
+  font-weight: bold;
   margin: 0 auto;
   padding: auto;
   line-height: 2;
 }
-.sishu{
-  font-size: 35px;
+.skill2{
+  font-size: 26px;;
   font-family: 'philosopher', serif;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: bold;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 80px;
+}
+.kikakusho2{
+  text-align: center;
+  font-weight: bold;
 }
 
-.sishubun {
-  width: 600px;
-  height: 200px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding: auto;
-  line-height: 2;
+.img-box {
+  position: relative;
 }
-.slider3{
-  margin-left: 180px;
-  margin-right: 180px;
-  margin-bottom: 500px;
-  margin-top: 60px;
+.img-box .active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s; // ゆっくり
 }
-.slider5{
-  margin-left: 180px;
-  margin-right: 180px;
-  margin-bottom: 500px;
+.img-box:hover .active {
+  opacity: 1;
 }
-.space{
-  margin-bottom: 100px;
+
+
+.sakuhin{
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 /*work
 ----------------------*/
@@ -453,18 +434,18 @@ margin-bottom: 100px;
   font-size: 22px;
   font-family: 'philosopher', serif;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 50px;
 }
 .keii2{
   font-size: 22px;
   font-family: 'philosopher', serif;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: bold;
 }
 .ad{
   width: 600px;
-  height: 300px;
+  height: 350px;
   margin: calc(50vh - 150px) auto;
   border-radius: 5px;
   box-shadow: 0 2px 30px #999;
@@ -472,8 +453,9 @@ margin-bottom: 100px;
   position: relative;
   overflow: hidden;
   margin: auto;
-  padding: 6px;
+  padding: 5px;
   line-height: 2.3;
+  font-weight: bold;
 }
 .arrowWrap {
   margin-top: 7vh;
@@ -580,6 +562,7 @@ margin-bottom: 100px;
 /*--------omline store-------*/
 #body{
   background-color: #fff;
+  color: #3f4245;
 }
 .logo3{
   width: 60px;
@@ -593,9 +576,10 @@ width: 100%;
 }
 .online-nav{
   display: flex;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-transform: uppercase;
-  margin-top:34px;
+  font-weight: bold;
+  margin-top:40px;
   margin-right: 110px;
   list-style: none;
 }
@@ -606,18 +590,17 @@ width: 100%;
   margin-left: 36px;
 }
 .online-nav a {
-  color: #ebeded;
+  color: #3f4245;
 }
 .online-nav a:hover {
-  color: #888;
+  color: #ddd;
 }
 .page-header4{
   display: flex;
   justify-content: space-between;
   height: 0.1px;
-  background-color: #82aaaa;
   width: 100%;
-  height: 100px;
+
 }
 .topics{
   font-size: 2rem;
@@ -634,29 +617,33 @@ width: 100%;
 .topics:before, .topics:after {
 	content: "";
 	flex-grow: 1;
-	border-top: 3px solid #000;
+	border-top: 3px solid #3f4245;
 	display: block;
 }
-.grid3 a {
-  width: 100%
-  color: #000;
-  text-decoration: none;
+
+.to2 {
+	overflow:		hidden;
+	position:		relative;
 }
-.grid3 a .item {
-  overflow: hidden;
-  width: auto;
-  height: auto;
-  background: #000;
+.to2 .caption {
+	font-size:		130%;
+	text-align: 		center;
+	color:			#fff;
 }
-.grid3 a .item img {
-  display: block;
-  overflow: hidden;
-  transition-duration: .9s;
+.to2 .mask {
+	width:			100%;
+	height:			97%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.6s ease;
+	transition:		all 0.6s ease;
 }
-.grid3 a:hover .item img {
-  transform: scale(1.1);
-  transition-duration: .9s;
-  opacity: 0.6;	/* 小さくするほど暗くなります */
+.to2:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+	padding-top:		115px;	/* ホバーで下にずらす */
 }
 .grid3 {
   display: grid;
@@ -666,27 +653,13 @@ width: 100%;
 padding: 150;
 margin-bottom: 200px;
 margin-top: 20px;
-margin-right: 50px;
-margin-left: 50px;
+margin-right: 100px;
+margin-left: 100px;
 }
 .grid3 .item {
   position: relative;
 }
-.grid3 .item p {
-  position: absolute;
-  color: #8aa3b9;/*文字は白に*/
-  font-weight: bold; /*太字に*/
-  font-size: 3em;/*サイズ2倍*/
-  font-family: 'philosopher', serif;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
-  /*文字の装飾は省略*/
-  }
+
   .new{
     font-size: 2rem;
     font-family: 'philosopher', serif;
@@ -732,28 +705,7 @@ margin-left: 50px;
   }
   /*TOPICS
   -------------------------------------------*/
-  .example {
-    position: relative;
-    }
-  .example p {
-    font-size: 3rem;
-    font-family: 'philosopher', serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    margin:0;
-    padding:0;
-    /*文字の装飾は省略*/
-    }
-  .example img {
-    height: 200px;
-    width: 100%;
-    }
+
     .shirttopics {
       display: grid;
       gap : 50px;
@@ -788,6 +740,7 @@ margin-left: 50px;
       margin-top: 2%;
       margin-left: 30px;
       margin-right: 50px;
+      color: #000;
     }
     .topics5 {
       width: 1200px;
@@ -795,7 +748,7 @@ margin-left: 50px;
       margin: calc(30vh - 150px) auto;
       border-radius: 5px;
       box-shadow: 0 2px 10px #999;
-      background: #8aa3b9;
+      background: #96b8b7;
       position: relative;
       overflow: hidden;
       display: grid;
@@ -830,7 +783,7 @@ margin-left: 50px;
   /*フッター
   ----------------------*/
   footer {
-    background: #82aaaa;
+    background: #48494a;
     padding: 20px 0;
   }
   footer p {
@@ -842,7 +795,7 @@ margin-left: 50px;
     color: #fff;
   }
   footer a:hover {
-    color: #888;
+    color: #ddd;
   }
   .po{
     margin-top: 60px;
@@ -870,13 +823,14 @@ margin-left: 50px;
   }
   .news-contents {
     text-align: center;
+    color: #000;
   }
   .shisyubun  {
     line-height: 2.3;
     font-size: 18px;
-    margin-top: 70px;
+    margin-top: 50px;
     font-family: sans-serif;
-    font-weight: 550;
+    font-weight: bold;
     text-align: left;
   }
   .shisyubun3  {
@@ -920,6 +874,7 @@ margin-left: 50px;
       position: relative;
       padding-top: 2px;
       margin-bottom: 10px;
+      color: #000;
   }
   .post-date {
       background: #888;
@@ -974,6 +929,7 @@ margin-left: 50px;
     margin-left: 100px;
     display: flex;
   	align-items: center;
+    color: #000;
   }
   .post-title3:before, .post-title3:after {
   	content: "";
@@ -992,11 +948,11 @@ margin-left: 50px;
     margin-bottom: 20px;
   }
   .shisyugazou{
-    width: 900px;
+    width: 700px;
     margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-bottom: 150px;
+    margin-left: 270px;
+    margin-right: 270px;
   }
   .titlegazou2{
     height: 350px;
@@ -1186,6 +1142,7 @@ width: 300px
 }
 .setumei{
   margin-left: 40px;
+  color: #000;
 }
 .setumei h3{
   margin-bottom: 60px;
