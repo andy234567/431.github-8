@@ -510,7 +510,7 @@ margin-bottom: 100px;
     position: absolute;
     color: white;/*文字は白に*/
     font-weight: bold; /*太字に*/
-    font-size: 2em;/*サイズ2倍*/
+    font-size: 18px;/*サイズ2倍*/
     font-family :Quicksand, sans-serif;
     top: 50%;
     left: 50%;
@@ -526,7 +526,7 @@ margin-bottom: 100px;
   }
   .EC {
 	overflow: hidden;
-	width: 1000px;
+	width: 600px;
 	height: auto;
   margin: 100px auto 100px auto;
 }
